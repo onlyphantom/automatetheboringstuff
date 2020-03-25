@@ -7,10 +7,8 @@ capitals = {'Alabama': 'Montgomery', 'Alaska': 'Juneau', 'Arizona': 'Phoenix',
 STUDENTCOUNT = 5
 for quizNum in range(STUDENTCOUNT):
 
-
     with open(f"quiz_{quizNum+1}.txt", 'w') as quizFile, \
         open(f"answer_{quizNum+1}.txt",'w') as answerFile:
-        # TODO: Write out the header for the quiz
         quizFile.write('Name:\n\nDate:\n\nPeriod:\n\n')
         quizFile.write((' ') + f'State Capitals Quiz {quizNum + 1}')
         quizFile.write('\n\n')
@@ -22,13 +20,10 @@ for quizNum in range(STUDENTCOUNT):
         # 10 question each
         for questionNum in range(10):
             sel_state = states[questionNum]
-            print(sel_state)
             correctAns = capitals[sel_state]
-            print(correctAns)
             wrongAns = [i for i in list(capitals.values()) if i != correctAns][:3]
             answerOptions = wrongAns + [correctAns]
             random.shuffle(answerOptions)
-            print(answerOptions)
 
             quizFile.write(f'{questionNum + 1}. What is the capital of {sel_state}?\n')
             for i in range(4):
