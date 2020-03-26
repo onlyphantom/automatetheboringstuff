@@ -12,6 +12,8 @@ The code solutions are presented as reference. I recommend that you attempt thes
 
 Some code solutions presented uses intermediate level concepts or newer features of Python not presented in the book (since they're introduced only in Python 3.6 or above). By taking advantage of newer features such as Python's f-strings, list comprehensions, context managers many code solutions are cleaner, shorter and remarkably faster than the given answers in the book. 
 
+Where `sys.argv` code is used in the solutions, I've also replaced them with the `argparse` equivalent (new in Python 3.2), the newer, preferred way of working with command-line options. In addition to being more pythonic, it also has built-in implementations such as `add_mutually_exclusive_group()` to make our code more robust without manually catchig exceptions.
+
 If you have completed the book's exercise, I encourage you to compare your solutions to the presented answer.
 
 ### Comparison: Generating Random Quiz Files
