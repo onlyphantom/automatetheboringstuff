@@ -14,6 +14,8 @@ Some code solutions presented uses intermediate level concepts or newer features
 
 Where `sys.argv` code is used in the solutions, I've also replaced them with the `argparse` equivalent (new in Python 3.2), the newer, preferred way of working with command-line options. In addition to being more pythonic, it also has built-in implementations such as `add_mutually_exclusive_group()` to make our code more robust without manually catchig exceptions. Python 3.4 onwards also introduces the `pathlib` and methods such as `Path().stem`, which we will take advantage of in place of the older, less-efficient methods.
 
+For the chapter on Sending Email and Text Messages, we will use environment variables which is the recommended way to store sensitive, confidential login credentials rather than a hard-coded value in your script. 
+
 ### Alternative solutions for deprecated methods
 Some code presented in the book are deprecated or used an outdated API call (that now require sign-ups). Alternative solutions and updated code are provided. Some examples of that include the `get_highest_row`, ``get_highest_column`, and `get_sheet_by_name` methods (all deprecated), so code provided in this repository uses the up-to-date corresponding calls `.max_row`, `.max_column` for example.
 
