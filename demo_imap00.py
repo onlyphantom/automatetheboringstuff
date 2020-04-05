@@ -9,8 +9,9 @@ emsince = datetime.date(2020, 3, 11)
 
 imapO = imapclient.IMAPClient('imap.gmail.com', ssl=True)
 imapO.login(em, pw)
-imapO.select_folder('INBOX', readonly=True)
+imapO.select_folder('INBOX', readonly=True) # if unsure, use imapO.list_folders()
 
+# gmail search more powerful: iampO.gmail_search('sales invoice march')
 UIDs = imapO.search([u'SINCE', emsince])
 # UIDs is a list: [838, 839, 840, 841, 842]
 print(f'Email since: {emsince.strftime("%A %d. %B %Y")}:', UIDs)

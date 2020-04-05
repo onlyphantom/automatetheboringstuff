@@ -14,4 +14,4 @@ with smtplib.SMTP('smtp.gmail.com', 587) as smtpObj:
     except smtplib.SMTPAuthenticationError:
         print("Username and Password not accepted.")
 
-    smtpObj.sendmail('automation@algorit.ma', ['samuel@algorit.ma'], "Subject: Automation script Version 2.\nAn email was sent using this automation script.\n\nTesting (samuel).")
+    smtpObj.sendmail('yourautomation@email.com', ['samuel@algoritma.com'], "Subject: Automation script Version 2.\nAn email was sent using this automation script.\n\nTesting (samuel).")

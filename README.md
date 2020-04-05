@@ -19,6 +19,8 @@ For the chapter on Sending Email and Text Messages, we will use environment vari
 ### Alternative solutions for deprecated methods
 Some code presented in the book are deprecated or used an outdated API call (that now require sign-ups). Alternative solutions and updated code are provided. Some examples of that include the `get_highest_row`, ``get_highest_column`, and `get_sheet_by_name` methods (all deprecated), so code provided in this repository uses the up-to-date corresponding calls `.max_row`, `.max_column` for example.
 
+The Chapter on sending Text Messages using Twilio referenced an outdated API (page 379-381). The code provided in this repo updates them to use the latest ones.
+
 If you have completed the book's exercise, I encourage you to compare your solutions to the presented answer.
 
 ### Comparison: Generating Random Quiz Files
